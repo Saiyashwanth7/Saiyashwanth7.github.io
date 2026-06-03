@@ -367,7 +367,16 @@
     padding: 2px 8px;
     margin-bottom: 8px;
   }
-
+  .project-legacy {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  margin-bottom: 8px;
+}
   .project-desc {
     color: #888;
     font-size: 13px;
@@ -758,6 +767,30 @@
       </div>
 
       <div class="project-card reveal">
+  <div class="project-header">
+    <div class="project-name">Hotel Booking Analytics & RAG Q&A</div>
+    <div class="project-date">Mid 2025</div>
+  </div>
+  <p class="project-desc">
+    RAG pipeline over 119K+ hotel booking records — chunked and embedded domain documents with sentence-transformers (MiniLM-L6-v2), indexed via FAISS cosine similarity, Mistral-7B for natural language Q&A. Hybrid retrieval combining vector search with deterministic analytics for revenue, cancellation rate, and lead-time queries. 4 FastAPI endpoints with background embedding on startup; analytical reports returned as base64 charts.
+  </p>
+  <div class="project-tech">
+    <span class="tag tag-accent">FastAPI</span>
+    <span class="tag tag-accent">LangChain</span>
+    <span class="tag tag-accent">FAISS</span>
+    <span class="tag">Mistral-7B</span>
+    <span class="tag">sentence-transformers</span>
+    <span class="tag">Matplotlib</span>
+  </div>
+  <div class="project-links">
+    <a href="https://github.com/Saiyashwanth7/Hotel-booking" target="_blank" class="project-link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+      GitHub
+    </a>
+  </div>
+</div>
+
+      <div class="project-card reveal">
         <div class="project-header">
           <div class="project-name">GhostDrop — Anonymous File Sharing</div>
           <div class="project-date">Jul 2025</div>
@@ -774,6 +807,64 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Saiyashwanth7/anonymous-file-transfer-webapp" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SIDE PROJECTS -->
+<section>
+  <div class="container">
+    <div class="section-label">02b · Early Projects</div>
+    <div class="projects-list">
+
+      <div class="project-card reveal">
+        <div class="project-legacy">Not maintained · Early learning project</div>
+        <div class="project-header">
+          <div class="project-name">Multi-Modal AI Chatbot</div>
+          <div class="project-date">Sep – Nov 2024</div>
+        </div>
+        <p class="project-desc">
+          First exploration of multimodal API integration — Cohere for NLP, Imagga for image recognition. Built async middleware and a responsive JS frontend. May be broken on free-tier hosting.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Flask</span>
+          <span class="tag">Cohere API</span>
+          <span class="tag">Imagga API</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://projectz-8x7k.onrender.com/" target="_blank" class="project-link">↗ Live Demo</a>
+          <a href="https://github.com/Saiyashwanth7/ProjectZ" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-legacy">Not maintained · Early learning project</div>
+        <div class="project-header">
+          <div class="project-name">Medical AI Chatbot</div>
+          <div class="project-date">April 2025</div>
+        </div>
+        <p class="project-desc">
+          First attempt at RAG — LangChain, vector database for semantic search, LLM APIs with response streaming. Where I learned what retrieval-augmented generation actually means in practice.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Python</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">Vector DB</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://altibbemedical.streamlit.app/" target="_blank" class="project-link">↗ Live Demo</a>
+          <a href="https://github.com/Saiyashwanth7/LLM-powered-Medical-Chatbot" target="_blank" class="project-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
             GitHub
           </a>
@@ -864,6 +955,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact">
