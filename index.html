@@ -778,12 +778,15 @@
       <div class="project-card reveal">
         <div class="project-featured">Featured</div>
         <div class="project-header">
-          <div class="project-name">Fuel Route Optimizer</div>
+          <div class="project-name">RouteWise</div>
           <div class="project-date">June 2026</div>
         </div>
         <p class="project-desc">
-          Route-based fuel stop optimizer built for the Spotter AI Backend Django Engineer assessment. Takes a start/finish US location, fetches the driving route via a single OpenRouteService API call, and finds the cheapest way to fuel up across 8,100+ real truck stations loaded into PostgreSQL. Candidate stations are narrowed to the route using vectorized NumPy haversine distance checks against the full polyline. Stop selection uses a dynamic programming approach — modeling the trip as a shortest-path problem over reachable stations within a 500-mile tank range, with a stop-penalty term that discourages excessive refueling stops while still reporting a fully reconciled, real fuel cost total. Deployed on Railway with a frontend for testing.
-        </p>
+          RouteWise plans the cheapest fuel stops along a driving route for a truck with a 500 mile range, using a Django REST API over 8,100+ stations stored in PostgreSQL.
+
+It makes a single OpenRouteService call per request and uses vectorized NumPy filtering, which cut a long route query from about 44 seconds to 11 seconds.
+
+Stops are chosen with a greedy cheapest-viable-station strategy, and I also prototyped a dynamic-programming version and documented why I chose not to ship it.
         <div class="project-tech">
           <span class="tag tag-accent">Django</span>
           <span class="tag tag-accent">Django REST Framework</span>
