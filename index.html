@@ -274,6 +274,56 @@ footer{padding:44px 0 56px;color:var(--muted);font-size:14px;display:flex;justif
           <div>PostgreSQL · Redis · RabbitMQ<small>Celery workers and beat job</small></div>
         </div>
       </article>
+      <article class="card rv">
+              <div class="top">
+                <h3>ClearHaul: weather-aware truck routing</h3>
+                <time>Oct 2026</time>
+              </div>
+              <p>
+                Finds three routes for a truck, works out when it reaches each
+                checkpoint, reads the hourly forecast for that place and time,
+                and classifies risk from wind, rain and snow, including
+                load-weight rules. Ranks the routes by miles at each risk level
+                and explains the recommendation. The map shows a weather heatmap
+                with a 48 hour slider and a truck that moves along the route.
+                One batched Open-Meteo request per trip with a 15 minute cache,
+                and the first response already holds 49 hours of risk, so the
+                slider never calls the API. The backend keeps all risk and
+                routing rules in a pure Python domain layer, tested without a
+                network.
+              </p>
+              <ul class="tags">
+                <li class="h">Django</li>
+                <li class="h">React</li>
+                <li>Leaflet</li>
+                <li>OSRM</li>
+                <li>Open-Meteo</li>
+                <li>pytest</li>
+                <li>Vercel</li>
+                <li>Render</li>
+              </ul>
+              <div class="row">
+                <a
+                  href="https://clear-haul-two.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  ><svg aria-hidden="true"><use href="#ar" /></svg>Live demo</a
+                >
+                <a
+                  href="https://www.loom.com/share/37036451e03e403db88c37b992315c3b"
+                  target="_blank"
+                  rel="noopener"
+                  ><svg aria-hidden="true"><use href="#ar" /></svg
+                  >Walkthrough</a
+                >
+                <a
+                  href="https://github.com/Saiyashwanth7/weather-aware-routing-for-trucks/"
+                  target="_blank"
+                  rel="noopener"
+                  ><svg aria-hidden="true"><use href="#gh" /></svg>GitHub</a
+                >
+              </div>
+            </article>
 
       <article class="card rv">
         <div class="top"><h3>CognoDB Graph Database Benchmark</h3><time>Aug 2026</time></div>
