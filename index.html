@@ -257,11 +257,11 @@ footer{padding:44px 0 56px;color:var(--muted);font-size:14px;display:flex;justif
           <div class="top"><h3>CentSible: personal expense tracker</h3><time>Oct 2026 – present</time></div>
           <p>A full-stack expense manager I’m building end to end, with an async FastAPI backend on PostgreSQL and a React and Material UI frontend.</p>
           <ul class="pts">
-            <li>Frontend covers protected routes, an auth context, expense CRUD with category filters, CSV export, a spending dashboard, and recurring expenses.</li>
-            <li>Cookie-based JWT auth with Google OAuth 2.0 sign-in and email password reset. Celery workers on RabbitMQ send the emails with exponential backoff retries.</li>
-            <li>A scheduled Celery beat job generates recurring expenses and is safe to run twice, using row-level locking to prevent duplicate charges.</li>
-            <li>Redis rate-limits the login endpoint. In progress: receipt upload to Cloudflare R2 and OpenRouter-based receipt scanning.</li>
-          </ul>
+            <li>Frontend covers protected routes, an auth context, expense CRUD with category filters, CSV export, a spending dashboard, budgets, and recurring expenses.</li>
+      <li>Cookie-based JWT auth with Google OAuth 2.0 sign-in and email password reset. Celery workers on RabbitMQ send the emails with exponential backoff retries.</li>
+      <li>One-click demo account: creates an isolated guest user with sample data, rate limited per IP with Redis, so visitors can try the app without signing up.</li>
+      <li>A scheduled Celery beat job generates recurring expenses and is safe to run twice, using row-level locking to prevent duplicate charges.</li>
+    </ul>
           <ul class="tags"><li class="h">React</li><li class="h">Material UI</li><li class="h">FastAPI</li><li class="h">PostgreSQL</li><li>Async SQLAlchemy</li><li>Celery</li><li>RabbitMQ</li><li>Redis</li><li>Docker Compose</li></ul>
           <div class="row">
             <a href="https://github.com/Saiyashwanth7/CentSible" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#gh"/></svg>GitHub</a> 
